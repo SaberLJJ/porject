@@ -136,17 +136,70 @@ git log
 
 ·
 
-我们今天学习的命令：
-分支 branch 相关 ：
+6.19 学习：
 
-查看本地仓库分支 git branch -v
-查看本地仓库及关联的所有分支 git banch -a
-分支前面带"\*"表示你所在的分支(你的修改 你的提交都会影响该分支)
-新建分支 git branch <branch_name>
-分支之间是相互隔离的
-删除分支 git barch -d <branch_name>
-强制删除分支 git barch -D <branch_name>
-切换分支 git checkout <branch_name> (检出)
-创建并切换该分支 git checkout -b <branch_name>
+分支相关：
 
-git commit -a -m "xxx" (不适用于新增文件[从未做过一个 add 操作])
+分支 branch 相关：
+
+1. 查看本地仓库分支：
+   git branch -v
+2. 查看本地仓库及关联仓库的所有分支分支：
+   git branch -a
+3. 分支前带\*表示你现在所在的分支（你的修改 提交都会影响分支）
+4. 新建分支
+   git branch <branch_name>
+5. 分支之间是相互独立且隔离的
+6. 删除分支：
+   git branch -d <branch_name>
+7. 强行删除分支：
+   git branch -D <branch_name>
+8. 切换分支：(检出)
+   git checkout <branch_name>
+9. 创建并切换该分支:
+   git checkout -b <branch_name>
+   合并操作:次要分支合并到主要分支
+10. 非快进合并
+    git merge --no-ff <branch_name>
+11. 快进合并
+    git merge <branch_name>
+12. git commit -a -m "xxx"不适用于新增的文件【从未做过一个 add 操作】
+13. 变基(改变基点)
+    git reabase 【目标】
+
+6.19 学习：
+
+分支相关：
+
+分支 branch 相关：
+
+1. 查看本地仓库分支：
+   git branch -v
+2. 查看本地仓库及关联仓库的所有分支分支：
+   git branch -a
+3. 分支前带\*表示你现在所在的分支（你的修改 提交都会影响分支）
+4. 新建分支
+   git branch <branch_name>
+5. 分支之间是相互独立且隔离的
+6. 删除分支：
+   git branch -d <branch_name>
+7. 强行删除分支：
+   git branch -D <branch_name>
+8. 切换分支：(检出)
+   git checkout <branch_name>
+9. 创建并切换该分支:
+   git checkout -b <branch_name>
+   合并操作:次要分支合并到主要分支
+10. 非快进合并
+    git merge --no-ff <branch_name>
+11. 快进合并
+    git merge <branch_name>
+12. git commit -a -m "xxx"不适用于新增的文件【从未做过一个 add 操作】
+13. 变基(改变基点)
+    git reabase 【目标】
+
+14.交互式变基：
+git rebase --abort
+
+15.取消变基
+git rebase --abort
